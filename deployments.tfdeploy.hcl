@@ -8,7 +8,7 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["us-east-1"]
-    role_arn       = "arn:aws:iam::975050084720:role/stacks-demo-pedro-ortiz-Learn-Terraform-Stacks-deployment"
+    role_arn       = "arn:aws:iam::313710344230:role/stacks-demo-pedro-ortiz-Learn-Terraform-Stacks-deployments"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
@@ -17,7 +17,7 @@ deployment "development" {
 deployment "production" {
   inputs = {
     regions        = ["us-east-1", "us-west-1"]
-    role_arn       = "arn:aws:iam::975050084720:role/stacks-demo-pedro-ortiz-Learn-Terraform-Stacks-deployment"
+    role_arn       = "arn:aws:iam::313710344230:role/stacks-demo-pedro-ortiz-Learn-Terraform-Stacks-deployments"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
